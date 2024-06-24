@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="card">
+    <img src="/assets/images/img.png" id="plant">
+    <a href="#" [routerLink]="['/']" id="back"><img src="/assets/images/ArrowCircle.svg"></a>
+    <h1>Login</h1>
+    <div class="paragraph01">
+      <p>Welcome back!</p>
+      <p>Please login to continue</p>
+    </div>
+
+    <form>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" autocomplete="off" required>
+
+      <label for="password">Password</label>
+      <div class="eyes">
+        <input type="{{ showPassword ? 'text' : 'password' }}" id="password" name="password" [(ngModel)]="password" placeholder="Enter your password" autocomplete="off" required>
+        <span class="eyes-icon" (click)="visibility()">
+          <img [src]="eyeIcon" alt="Toggle password visibility" class="eye-icon">
+        </span>
+      </div>
+      <button type="submit">Login</button>
+      <a href="#" style="font-size: 0.8rem">Forgot Password</a>
+    </form>
+
+    <p class="social">Or Continue with Social Accounts</p>
+    <div class="social-accounts">
+      <p><img src="/assets/images/google.png" alt="Google" width="50" height="50"></p>
+      <p><img src="/assets/images/facebook.png" alt="Facebook" width="48" height="48"></p>
+      <p><img src="/assets/images/apple.png" alt="Apple" width="50" height="50"></p>
+      <p><img src="/assets/images/twitter.png" alt="Twitter" width="50" height="50"></p>
+    </div>
+
+    <footer>
+      <p style="font-size: 0.8rem">Don't have an account? <a href="#" [routerLink]="['/singup']">Create Now</a></p>
+    </footer>
+  </div>
+</div>
