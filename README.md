@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
+# Description
+This is a simple Angular application demonstrating a login and registration page. It uses Angular's template-driven forms for user interaction.
+
+# Features
+
+Form Validation: Validates user inputs for email and password fields.
+Responsive Design: Built with responsive design principles in mind.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
