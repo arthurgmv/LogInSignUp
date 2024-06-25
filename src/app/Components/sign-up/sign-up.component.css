@@ -198,12 +198,9 @@ form::placeholder {
     font-size: 0.7rem;
   }
 
-  .eyes {
-    flex-direction: column;
-  }
 
   .eye-icon {
-    margin-left: 0;
+    margin-left: 0.3rem;
     margin-top: 0.3rem;
     width: 0.8rem;
     height: 0.8rem;
