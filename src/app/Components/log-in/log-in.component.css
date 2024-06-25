@@ -160,7 +160,7 @@ form label {
 
 form input {
   height: 2rem;
-  background-color: white;
+  background-color: #f4f4f4;
   outline: none;
   box-sizing: border-box;
   border: none;
