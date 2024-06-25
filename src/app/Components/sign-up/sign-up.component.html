@@ -7,16 +7,40 @@
       <p>Enter your information or continue with social media account</p>
     </div>
 
-    <form #loginForm="ngForm"(ngSubmit)="onSubmit(loginForm)" autocomplete="off">
+    <form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)" autocomplete="off">
       <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Your email address" ngModel autocomplete="off" [value]="''">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your email address"
+        ngModel
+        required
+        email
+        autocomplete="off">
 
       <label>Mobile Number</label>
-      <input type="tel" id="number" placeholder="Your mobile number">
+      <input
+        type="tel"
+        id="number"
+        placeholder="Your mobile number"
+        name="number"
+        ngModel
+        required
+        pattern="[0-9]{8,}">
 
       <label for="password">Password</label>
       <div class="eyes">
-        <input type="{{ showPassword ? 'text' : 'password' }}" id="password" name="password" [(ngModel)]="password" placeholder="Enter your password" autocomplete="off" [value]="''">
+        <input
+          [type]="showPassword ? 'text' : 'password'"
+          id="password"
+          name="password"
+          ngModel
+          placeholder="Enter your password"
+          required
+          minlength="8"
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[a-zA-Z\d!@#$%^&*()_+]+$"
+          autocomplete="off">
         <span class="eyes-icon" (click)="visibility()">
           <img [src]="eyeIcon" alt="Toggle password visibility" class="eye-icon">
         </span>
@@ -26,10 +50,10 @@
 
     <p class="social">Or Register with Social Accounts</p>
     <div class="social-accounts">
-      <p><img src="/assets/images/google.png" alt="Google" width="50" height="50"></p>
-      <p><img src="/assets/images/facebook.png" alt="Facebook" width="48" height="48"></p>
-      <p><img src="/assets/images/apple.png" alt="Apple" width="50" height="50"></p>
-      <p><img src="/assets/images/twitter.png" alt="Twitter" width="50" height="50"></p>
+      <p><a href="https://www.google.com/" target="_blank"><img src="/assets/images/google.png" alt="Google" width="50" height="50"></a></p>
+      <p><a href="https://www.facebook.com/" target="_blank"><img src="/assets/images/facebook.png" alt="Facebook" width="48" height="48"></a></p>
+      <p><a href="https://www.apple.com/" target="_blank"><img src="/assets/images/apple.png" alt="Apple" width="50" height="50"></a></p>
+      <p><a href="https://x.com/" target="_blank"><img src="/assets/images/twitter.png" alt="Twitter" width="50" height="50"></a></p>
     </div>
 
     <footer>
