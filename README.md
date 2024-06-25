@@ -1,14 +1,14 @@
 # LogInSignUp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
+🌐 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
 # Description
 This is a simple Angular application demonstrating a login and registration page. It uses Angular's template-driven forms for user interaction.
 
 # Features
 
-Form Validation: Validates user inputs for email and password fields.
-Responsive Design: Built with responsive design principles in mind.
+<b>Form Validation:</b>✅ Validates user inputs for email and password fields.<br/>
+<b>Responsive Design:</b>📱 Built with responsive design principles in mind.
 
 ## Development server
 
